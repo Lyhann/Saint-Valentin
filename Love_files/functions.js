@@ -33,8 +33,10 @@ $(window).resize(function () {
 })(jQuery);
 
 function timeElapse(date) {
-    var current = new Date(); // ← CORREGIDO
+    var current = new Date(); 
+    // Garde cette ligne si tu as un décalage d'une heure à corriger, sinon tu peux la supprimer
 	current.setHours(current.getHours() - 1);
+    
     var seconds = (current.getTime() - date.getTime()) / 1000;
 
     var days = Math.floor(seconds / (3600 * 24));
@@ -50,9 +52,10 @@ function timeElapse(date) {
     seconds = Math.floor(seconds % 60);
     if (seconds < 10) seconds = "0" + seconds;
 
-    var result = " <span class=\"digit\">" + days + "</span> días " +
-        "<span class=\"digit\">" + hours + "</span> horas " +
-        "<span class=\"digit\">" + minutes + "</span> minutos " +
-        "<span class=\"digit\">" + seconds + "</span> segundos";
+    // Traduction des unités en français ici :
+    var result = " <span class=\"digit\">" + days + "</span> jours " +
+        "<span class=\"digit\">" + hours + "</span> heures " +
+        "<span class=\"digit\">" + minutes + "</span> minutes " +
+        "<span class=\"digit\">" + seconds + "</span> secondes";
     $("#clock").html(result);
 }
