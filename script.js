@@ -142,7 +142,7 @@
         // --- RÉGLAGE DE TA DATE ICI ---
         // Format : (Année, Mois, Jour)
         // ATTENTION : Janvier = 0, Février = 1, Mars = 2... Décembre = 11
-        together.setFullYear(2025, 9, 24); 
+        together.setFullYear(2025, 1, 14); 
         
         together.setHours(0);
         together.setMinutes(0);
