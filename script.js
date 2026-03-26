@@ -70,6 +70,7 @@
         canvas.toggleClass('hand', seed.hover(x, y));
     });
 
+     // --- PEGA EL CÓDIGO NUEVO AQUÍ ---
     $(document).keydown(function(e) {
         if (e.keyCode == 13) {
             if (hold) {
@@ -80,6 +81,7 @@
             }
         }
     });
+
 
     var seedAnimate = eval(Jscex.compile("async", function () {
         seed.draw();
@@ -138,12 +140,7 @@
 
     var textAnimate = eval(Jscex.compile("async", function () {
         var together = new Date();
-        
-        // --- RÉGLAGE DE TA DATE ICI ---
-        // Format : (Année, Mois, Jour)
-        // ATTENTION : Janvier = 0, Février = 1, Mars = 2... Décembre = 11
-        together.setFullYear(2025, 9, 24); 
-        
+        together.setFullYear(2025, 9, 24);
         together.setHours(0);
         together.setMinutes(0);
         together.setSeconds(0);
@@ -170,3 +167,6 @@
 
     runAsync().start();
 })();
+
+
+   
