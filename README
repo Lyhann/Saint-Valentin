@@ -1,0 +1,26 @@
+# 🌸 Arbre de la Saint-Valentin (Version Française)
+
+Un projet web interactif et romantique utilisant HTML5 Canvas et JavaScript pour créer une animation d'arbre qui fleurit, accompagnée d'un message personnalisé et d'un compteur de temps.
+
+## ✨ Aperçu
+- **Animation fluide :** Un arbre qui pousse et fleurit avec des cœurs.
+- **Message Typewriter :** Un texte qui s'écrit automatiquement lettre par lettre.
+- **Compteur d'amour :** Un calcul précis du temps passé ensemble (jours, heures, minutes, secondes).
+- **Design réactif :** S'adapte à la taille de l'écran.
+
+## 🚀 Installation locale
+
+1. **Cloner ou Télécharger :** Récupérez l'intégralité du dossier sur votre ordinateur.
+2. **Ouvrir avec VS Code :** Lancez Visual Studio Code et ouvrez le dossier du projet.
+3. **Lancer le serveur :** - Installez l'extension **Live Server** si vous ne l'avez pas.
+   - Faites un clic droit sur `index.html` et choisissez **"Open with Live Server"**.
+
+## 🛠 Personnalisation
+
+### 1. Changer le message
+Ouvrez le fichier `index.html` et modifiez les lignes à l'intérieur de la balise `<div id="code">`. Chaque ligne doit être entourée de `<span class="say">...</span>`.
+
+### 2. Régler votre date anniversaire
+Ouvrez le fichier `script.js` et cherchez la ligne suivante :
+```javascript
+together.setFullYear(2025, 1, 14); 
